@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/*
+assignment.css
+Name: Ziyang Wang
+Date: 21 May 2023
+Notes: Assignment Form Validation
+*/
+
+div.container {
+	width:27%;
+	max-width:1260px;	
+	margin:0 auto;
+	text-align: left;
+	padding:45px;
+	outline:6px solid #140A22;
+	border: 3px dashed #F28D35;
+	background-color:#39174B;
+}
+
+div.help {
+	width:100%;
+	margin:0 auto;
+	max-width:500px;	
+	text-align: left;
+	padding:45px;
+	outline:6px solid #140A22;
+	border: 3px dashed #F28D35;
+	background-color:#39174B;
+}
+
+h1{
+	color:#F26835;
+	font-family: 'Courgette', 'Monotype Corsiva', 'Comic Sans MS', cursive;
+	font-size: 50px;
+	text-shadow: 1px 8px 10px #261340;
+}
+
+h3{
+	text-align: left;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	margin: 10px;
+	color:#F26835;
+}
+
+fieldset {
+	border: 1px solid #F28D35;
+}
+
+h4 {
+	color: #F26835;
+	font-family: 'Merriweather', 'Times New Roman', Times, serif;
+	font-size: 24px;
+}
+
+label {
+	color: #F26835;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+fieldset label input{
+	margin: 6px;
+}
+
+div.button {
+	margin:0 auto;
+	padding-top: 20px;
+}
+
+div.button input{
+	margin: 3px;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color:#39174B;
+}
+
+div.help ul {
+	margin: 0 auto;
+	padding: 20px;
+	text-shadow: 3px 3px 5px #261340;
+}
+
+div.help ul li {
+	margin: 10px;
+	width: fit-content;
+	font-size:16px;
+	font-weight: 100;
+	font-family: 'Merriweather', 'Times New Roman', Times, serif;
+	color: #F28D35;
+	list-style-type: circle;
+}
+
+div.help ul li span{
+	font-size:18px;
+	font-weight: bold;
+	color:#F26835;
+	transition: .5s;
+}
+	

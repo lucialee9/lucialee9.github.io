@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Name: Ziyang Wang -->
+		<!-- Date: 21 May 2023 -->
+		<!-- Assignment Form Validation -->
+		<meta charset="utf-8">
+		<title>Taylor Swift Online Store - Customer check out</title>
+		<link rel="stylesheet" type="text/css" href="../css/form.css">
+		<link rel="shortcut icon" href="../images/favicon.ico">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Taylor Swift - Online Store</h1>
+			<h3>Customer check out</h3>
+			<form name="userForm" id="userForm" autocomplete="on" onsubmit="return validateForm()">
+				<fieldset>
+					<legend>
+						<h4>Customer details</h4>
+					</legend>
+					<label>
+						First Name 
+						<input type="text" name="firstName" id="firstname" onfocus="changeBgd(this)" onblur="resetBgd(this)">
+						<span id="firstnameerror"></span>
+					</label>
+					<br>
+					<label>
+						Last Name 
+						<input type="text" name="lastName" id="lastname" onfocus="changeBgd(this)" onblur="resetBgd(this)">
+						<span id="lastnameerror"></span>
+					</label>
+					<br>
+					<label>
+						Postcode 
+						<input type="text" name="postCode" id="postcode" onfocus="changeBgd(this)" onblur="resetBgd(this)">
+						<span id="postcodeerror"></span>
+					</label>
+					<br>
+					<label>						
+						Email 
+						<input type="text" name="email" id="email" onfocus="changeBgd(this)" onblur="resetBgd(this)">
+						<span id="emailerror"></span>
+					</label>
+				</fieldset>            
+				<fieldset>
+					<legend>
+						<h4>Payment details</h4>
+					</legend>
+					<label> 
+						Credit Card
+						<select name="payment" id="payment" onfocus="changeBgd(this)" onblur="resetBgd(this)">
+							<option value="">Select a payment type</option>
+							<option value="visa">Visa</option> 
+							<option value="aexpress">American Express</option> 
+							<option value="paypal">PayPal</option>
+							<option value="westpac">Westpac</option>
+						</select>
+						<span id="paymenterror"></span>
+					</label>				
+					<br>
+					<label>
+						Card number
+						<input type="text" name="cardNumber" id="cardnumber" onfocus="changeBgd(this)" onblur="resetBgd(this)">
+						<span id="cardnumerror"></span>
+					</label>
+					<br>
+					<label>
+						CCV
+						<input type="text" name="ccv" id="ccv" onfocus="changeBgd(this)" onblur="resetBgd(this)">
+						<span id="ccverror"></span>
+					</label>
+					<br>
+					<label>
+						Expiry MM/YY
+						<select name="expirymonth" id="expirymonth" onfocus="changeBgd(this)" onblur="resetBgd(this)">
+							<option value="">month</option>					
+							<option value="1">01</option>
+							<option value="2">02</option>
+							<option value="3">03</option>
+							<option value="4">04</option>
+							<option value="5">05</option>
+							<option value="6">06</option>
+							<option value="7">07</option>
+							<option value="8">08</option>
+							<option value="9">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+						<span id="montherror"></span>												
+					</label>
+					<label>&sol;</label>				
+					<label>						
+						<select name="expiryyear" id="expiryyear" onfocus="changeBgd(this)" onblur="resetBgd(this)">
+							<option value="">year</option>
+							<option value="2022">2022</option>						
+							<option value="2023">2023</option>
+							<option value="2024">2024</option>
+							<option value="2025">2025</option>
+							<option value="2026">2026</option>
+							<option value="2027">2027</option>
+							<option value="2028">2028</option>
+							<option value="2029">2029</option>
+							<option value="2030">2030</option>
+						</select>
+						<span id="yearerror"></span>
+						<br>
+						<span id="expiryerror"></span>	
+					</label>								
+				</fieldset>
+				<div class="button">
+					<input type="submit" name="submit" value="Submit">
+					<input type="button" name="help" value="Help" onclick="openHelp()">
+					<br>
+					<input type="button" name="website" value="GO TO OTHER WEBSITES" onclick="openWebsite()">
+				</div>				
+            </form>
+        </div>
+		<script src="../js/assignment.js"></script>
+	</body>
+</html>
